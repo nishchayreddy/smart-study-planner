@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Study Planner</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background: white;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        input {
+            padding: 8px;
+            margin: 5px;
+            width: 28%;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        .btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .add-btn {
+            background: #28a745;
+            color: white;
+        }
+
+        .submit-btn {
+            background: #007bff;
+            color: white;
+            width: 100%;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>📚 Smart Study Planner</h2>
+
+    <form action="/generate" method="post">
+        <div id="inputs">
+            <div>
+                <input name="subject" placeholder="Subject">
+                <input name="days" type="number" placeholder="Days Left">
+                <input name="difficulty" type="number" placeholder="Difficulty (1-5)">
+            </div>
+        </div>
+
+        <button type="button" class="btn add-btn" onclick="addField()">+ Add Subject</button>
+
+        <button type="submit" class="btn submit-btn">Generate Plan</button>
+    </form>
+</div>
+
+<script>
+function addField() {
+    const div = document.createElement("div");
+    div.innerHTML = `
+        <input name="subject" placeholder="Subject">
+        <input name="days" type="number" placeholder="Days Left">
+        <input name="difficulty" type="number" placeholder="Difficulty (1-5)">
+    `;
+    document.getElementById("inputs").appendChild(div);
+}
+</script>
+
+</body>
+</html>
