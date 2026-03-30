@@ -1,0 +1,91 @@
+SMART STUDY PLANNER – PROJECT REPORT
+
+1. INTRODUCTION
+   The Smart Study Planner is a web-based application developed to help students manage their study schedules effectively. Students often face difficulty in deciding what to study first when multiple subjects and deadlines are involved. This project aims to solve that problem by generating a structured and prioritized study plan.
+
+---
+
+2. PROBLEM STATEMENT
+   Students struggle with time management due to multiple subjects, varying difficulty levels, and limited time before exams. They often end up either focusing too much on one subject or ignoring others. This leads to inefficient preparation and increased stress.
+
+---
+
+3. OBJECTIVE
+   The main objective of this project is to develop a system that:
+
+* Accepts subject details such as name, days left, and difficulty level
+* Calculates priority based on urgency and difficulty
+* Generates a day-wise study schedule
+* Helps users track their progress
+
+---
+
+4. METHODOLOGY
+   The project is built using a simple yet effective approach:
+
+* The user inputs subjects, number of days left, and difficulty level
+* A priority score is calculated using:
+
+  * Urgency (inverse of days left)
+  * Difficulty level
+* Subjects are sorted based on priority
+* Available study hours per day are distributed proportionally among subjects
+* A day-wise schedule is generated
+* A progress tracker allows users to mark tasks as completed
+
+---
+
+5. TECHNOLOGIES USED
+
+* Python (Flask framework) for backend
+* HTML and CSS for frontend design
+* JavaScript for interactivity (checkbox tracking)
+* GitHub for project hosting
+
+---
+
+6. FEATURES
+
+* User-friendly input system
+* Priority-based scheduling
+* Day-wise study plan generation
+* Interactive progress tracking
+* Clean and simple user interface
+
+---
+
+7. RESULTS
+   The application successfully generates a structured study plan based on user input. It ensures balanced time distribution across subjects and helps students stay organized. The progress tracker improves engagement and usability.
+
+---
+
+8. CHALLENGES FACED
+
+* Designing a fair priority calculation system
+* Distributing time evenly without overloading one subject
+* Handling user input errors
+* Making the interface simple yet functional
+
+---
+
+9. LEARNING OUTCOMES
+   Through this project, I learned:
+
+* How to build a web application using Flask
+* How to implement logic-based scheduling algorithms
+* Basics of frontend design and user interaction
+* Using GitHub for project management
+
+---
+
+10. FUTURE IMPROVEMENTS
+
+* Add user login and data saving
+* Improve UI with advanced styling
+* Add notifications or reminders
+* Make the application mobile-friendly
+
+---
+
+11. CONCLUSION
+    The Smart Study Planner is a useful tool that helps students manage their study time efficiently. It combines simple logic with practical usability, making it a helpful solution for everyday academic planning.
